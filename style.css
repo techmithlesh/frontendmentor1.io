@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    background: url(./images/desktop/image-header.jpg) center;
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    height: 80vh;
+}
+#header .nav-menu{
+    padding-top: 1.2rem;
+    padding-right: 2rem;
+}
+ .nav-menu button{
+    text-transform: capitalize;
+}
+#header a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+#header h1{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    word-spacing: 5px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    
+}
+.img-fluid{
+    width: 100vw;
+}
+.logo{
+    top: 0;
+    transform: translateY(-3.5rem);
+    margin-left: -2.5rem;
+}
+#header img{
+    position: relative;
+    left: 48%;
+    top: 3.3rem;   
+}
+.design{
+    
+    background: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+}
+.photography{
+    background: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+}
+.design h2{
+    padding-top: 22rem;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.brand h2{
+    padding-top: 8rem;
+    padding-left: 4rem;
+    font-family: 'Roboto', sans-serif;
+}
+.brand p{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+}
+.brand a{
+    margin-top: 2rem;
+}
+.photography h2{
+    padding-top: 20rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.brand2 h2{
+    padding-top: 8rem;
+    padding-left: 4rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+.brand2 p{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+}
+
+#testimonial-box img{
+ position: relative;
+ left: 13rem;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.social-media-link i{
+    font-size: 1.2rem;
+}
+
+#grid-box{
+    /* background-color: red; */
+    justify-content: space-between;
+}
+.img-fluid{
+    width: 100vw;
+}
+
+#footer-logo{
+   position: relative;
+   padding-top: 10rem;
+}
+
+/* Mobile Menu */
+.mobile-menu-container{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    padding-bottom: 2rem;
+    top: 10%;
+    right: 5%;
+    width: 90vw;
+    background-color: #fff;
+    transition: top 1s ease-in;
+}
+.ham-menu{
+position: absolute;
+top: 2%;
+right: 5%;
+display: none;
+
+}
+#closeMenu{
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    display: none;
+    transition: 3s ease-in;
+}
+#gbox{
+    display: flex;
+    flex-direction: row;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media only screen and (max-width: 768px) {
+   #header .navlink{
+       display: none;
+   }
+   #header{
+       height: 60vh;
+   }
+   #header h1{
+       font-size: 2.5rem;
+       line-height: 3.5rem;
+       font-weight: 800;
+   }
+   #arrow{
+      position: absolute;
+     transform: translateY(-3rem);
+      height: 9rem;
+   }
+   .flex{
+       flex-direction: column-reverse;
+       justify-content: center;
+   }
+   .flex-1 h1{
+       text-align: center;
+       font-size: 2rem;
+       white-space: nowrap;
+       padding-top: 1rem;
+       transform: translateX(-1.2rem);
+   }
+   .flex-1 p{
+       text-align: center;
+       padding: 1rem;
+       padding-bottom: 2rem;
+   }
+   .flex-1 a{
+      margin-left: 6rem;
+      margin-top: 2rem;
+   }
+   #fcontainer2{
+       flex-direction: column;
+       padding-top: 2rem;
+       padding-bottom: 2rem;
+   }
+   #standout{
+       white-space: pre-wrap;
+   }
+#fcontainer3{
+    flex-direction: column;
+    justify-content: center;
+}
+.design{ 
+    background: url(./images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+}
+.photography{
+    background: url(./images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Testimonial-box */
+#textimonial-container{
+    justify-content: center;
+}
+#textimonial-container h2{
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+#tbox img{
+justify-content: center;
+align-items: center;
+position: absolute;
+left: 45%;
+}  
+#tbox p{
+    margin-top: 3rem;
+}
+
+.ham-menu{
+       display: block;
+   }
+
+   /* FOOTER */
+  footer .navlink{
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+   .nav-list{
+       margin: 5px;
+   }
+   #scontainer{
+       flex-direction: row;
+   }
+   #header .logo{
+       margin-right: 8rem;
+       margin-top: -.3rem;     
+   }
+}
